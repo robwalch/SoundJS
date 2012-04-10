@@ -141,9 +141,10 @@ this.createjs = this.createjs || {};
 	 * @static
 	 */
 	s.isSupported = function () {
-		if (createjs.Sound.BrowserDetect.isIOS) {
-			return false;
-		}
+		// Let the developer decide when using iOS
+		// if (createjs.Sound.BrowserDetect.isIOS) {
+		// 	return false;
+		// }
 		// You can enable this plugin on iOS by removing this line, but it is not recommended due to the limitations:
 		// iOS can only have a single <audio> instance, cannot preload or autoplay, cannot cache sound, and can only be
 		// played in response to a user event (click)
