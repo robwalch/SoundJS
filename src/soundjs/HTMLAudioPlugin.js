@@ -141,7 +141,7 @@ this.createjs = this.createjs || {};
 	 * @static
 	 */
 	s.isSupported = function () {
-		// Let the developer decide when using iOS
+		// Let the developer use SoundJS with iOS. iOS can play one channel of audio in a user event initiated call stack.
 		// if (createjs.Sound.BrowserDetect.isIOS) {
 		// 	return false;
 		// }
