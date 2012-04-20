@@ -466,7 +466,8 @@ this.createjs = this.createjs || {};
 				this.onPlayFailed(this);
 			}
 			this.sendEvent("failed");
-			this.cleanUp();  // OJR NOTE this will stop playback, and I think we should remove this and let the developer decide how to handle stalled instances
+			//Don't stop sound on stall event. A little stall never hurt anybody. Clearing my sound does.
+			//this.cleanUp();  // OJR NOTE this will stop playback, and I think we should remove this and let the developer decide how to handle stalled instances
 		},
 
 		handleSoundReady:function (event) {
